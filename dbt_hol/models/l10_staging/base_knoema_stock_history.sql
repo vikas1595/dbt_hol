@@ -1,0 +1,14 @@
+SELECT company_symbol                    Company
+     , company_name               Company_Name
+     , ticker             Company_Ticker
+     , stock_exchange             Stock_Exchange
+     , stock_exchange_name       Stock_Exchange_Name
+     , indicator                  Indicator
+     , indicator_name             Indicator_Name
+     , units                      Units
+     , scale                      Scale
+     , frequency                  Frequency
+     , date                       Date
+     , value                      Value
+     , data_source_name data_source_name
+  FROM {{source('dbt_hol_dev','stock_prices')}}  src 

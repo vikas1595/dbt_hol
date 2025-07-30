@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: dbt_hol_dev
+    database: dbt_hol_dev
+    schema: public
+    tables:
+      - name: stock_prices
+      - name: fx_rates
