@@ -1,0 +1,11 @@
+snapshots:
+  - name: scd_airbnb_reviews
+    description: "Snapshot for slowly changing dimension of reviews"
+    relation: ref('src_reviews')
+    config:
+      database: AIRBNB
+      schema: snapshot
+      strategy: timestamp
+      updated_at: review_date
+      unique_key: listing_review_id
+      hard_deletes: invalidate

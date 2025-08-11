@@ -1,0 +1,11 @@
+version: 2
+models:
+  - name: dim_listings_cleansed
+    columns:
+      - name: listing_id
+        tests:
+          - not_null
+          - unique
+      - name: minimum_nights
+        data_tests:
+          - positive_col_value

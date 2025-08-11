@@ -1,0 +1,6 @@
+models:
+  - name: fct_trading_pnl_finance_view
+    config:
+      materialized: view
+      schema: l30_mart
+   

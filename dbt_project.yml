@@ -37,9 +37,21 @@ models:
     l10_staging:
       schema: l10_staging
       materialized: view
+      +enabled: false  # Disable all models in this directory by default
     l20_transform:
       schema: l20_transform
       materialized: view
+      +enabled: false  # Disable all models in this directory by default
     l30_mart:
       schema: l30_mart
       materialized: view
+      +enabled: false  # Disable all models in this directory by default
+    src:
+      schema: RAW
+      materialized: view
+    dim:
+      schema: DIM
+      +materialized: view
+    fact:
+      schema: FACT
+      +materialized: table
