@@ -1,5 +1,5 @@
 [project]
-name = "dbt-hol"
+name = "dbt_airbnb"
 version = "0.1.0"
 description = ""
 authors = [
@@ -11,6 +11,10 @@ dependencies = [
     "dbt-core (>=1.10.5,<2.0.0)",
     "dbt-snowflake (>=1.10.0,<2.0.0)"
 ]
+
+
+[tool.poetry]
+package-mode = false
 
 
 [build-system]
